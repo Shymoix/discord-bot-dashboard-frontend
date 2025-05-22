@@ -1,75 +1,46 @@
-# Nuxt Minimal Starter
+# Discord Bot Dashboard (Frontend Only)
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Bu proje, **Nuxt 3** ile geliştirilmiş sadece arayüz (frontend) kısmından oluşan bir Discord bot dashboard tasarımıdır. Henüz veri çekme, API bağlantısı veya backend entegrasyonu içermemektedir.
 
-## Setup
+## 📁 Sayfalar ve Amaçları
 
-Make sure to install dependencies:
+- **`/` (index)**  
+  Ana sayfa. Dashboard’a giriş noktasıdır, genel bilgilendirme ve yönlendirmeler içerebilir.
+
+- **`/moderation`**  
+  Sunucudaki kullanıcılar üzerinde yapılabilecek moderasyon işlemleri için tasarlanmış sayfadır (kick, ban, timeout vb.).
+
+- **`/admin`**  
+  Yönetici panelidir. Dashboard ayarları, bot yönetimi gibi işlemler için tasarlanmıştır.
+
+- **`/guild`**  
+  Kullanıcının sunucularının (guild) listelendiği, sunucu seçim işleminin yapılabileceği sayfadır.
+
+- **`/fun`**  
+  Eğlenceli komutlara veya özelliklere ait bileşenlerin bulunduğu sayfadır. Eğlence komutlarının arayüzü burada yer alır.
+
+- **`/automod`**  
+  Otomatik moderasyon kurallarını temsil eder. Spam, link engelleme vb. ayarların arayüzü buraya yerleştirilir.
+
+## 🛠️ Teknolojiler
+
+- [Nuxt 3](https://nuxt.com/)
+- [Vue 3](https://vuejs.org/)
+- [Tailwind CSS](https://tailwindcss.com/) (isteğe bağlı)
+- (API veya backend **yoktur**)
+
+## 🔧 Kurulum
+
+Projeyi yerel ortamda çalıştırmak için:
 
 ```bash
-# npm
+# Depoyu klonlayın
+git clone https://github.com/kullaniciadi/discord-dashboard.git
+cd discord-dashboard
+
+# Bağımlılıkları yükleyin
 npm install
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
+# Geliştirme sunucusunu başlatın
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
